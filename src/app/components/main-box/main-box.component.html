@@ -1,0 +1,17 @@
+<main>
+    <p class="adivce-id">ADVICE # {{(advices | async)?.slip?.id}}</p>
+    <div class="advice-content">
+        <p class="adivice-text">"{{(advices | async)?.slip?.advice}}"</p>
+    </div>
+
+
+    <picture class="pattern-divider">
+        <source class="pattern-divider-mobile" srcset="../../../assets/images/pattern-divider-mobile.svg" media="(max-width: 560px)" />
+        
+        <img class="divider-img" src="../../../assets/images/pattern-divider-desktop.svg" alt="">
+      </picture>
+
+    <button (click)="reloapage()" class="btn-change-advice">
+        <img class="icon-dive" src="../../../assets/images/icon-dice.svg" alt="icon dive">
+    </button>
+</main>

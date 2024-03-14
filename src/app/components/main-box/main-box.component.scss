@@ -1,0 +1,102 @@
+@import "../../../styles.scss";
+
+main {
+    background-color: $DarkGrayishBlue;
+
+    width: 540px;
+    min-height: 330px;
+
+    border-radius: 1.5em;
+    padding: 50px;
+
+    position: relative;   
+}
+
+.adivce-id {
+    color: $NeonGreen;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-size: 14px;
+}
+.advice-content {
+    min-height: 170px;
+    
+    padding: 30px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .adivice-text {
+        color: $LightCyan;
+        font-size: 28px;
+        text-align: center;
+    }
+}
+.divider-img {
+    align-self: flex-end;
+}
+
+button {
+    background-color: $NeonGreen;
+
+    width: 64px;
+    height: 64px;
+
+    border-radius: 50%;
+
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    .icon-dive {
+        mix-blend-mode: multiply;
+    }
+}
+
+@media (max-width: 560px) {
+    main {
+        width: 340px;
+        height: 315px;
+
+        padding: 40px 20px ;
+    }
+    .advice-content {
+        min-height: 170px;
+        
+        padding: 10px 0;
+        .adivice-text {
+            font-size: 28px;
+        }
+    }
+}
+
+@media (max-width: 281px) {
+    main {
+        width: 90%;
+        min-height: 315px;
+
+        margin: 0 auto;
+
+        padding: 30px 10px 0px 10px;
+    }
+    .advice-content {
+        min-height: 170px;
+        padding: 10px 0;
+    
+        .adivice-text {
+            color: $LightCyan;
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+    img {
+        width: 100% !important;
+    }
+    .icon-dive {
+        width: auto !important;
+        height: auto !important;
+    }
+}
